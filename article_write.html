@@ -35,12 +35,18 @@
         width: 70%;
     }
 
-    .article-write input {
+    .article-title {
+        width: 100%;
+        padding: 8px;
+        box-sizing: border-box;
+    }    
+
+    .etc {
         min-width: 100%;
         max-width: 100%;
         box-sizing: border-box;
         min-height: 250px;
-        max-height: 250px;
+        padding : 10px;
     }
 
     .send-area {
@@ -96,16 +102,14 @@
         </div>
         <div class="article-write">
             <div>タイトル</div>
-            <div>1</div>
-        </div>
-        <div class="article-write">
-            <div>ステータス</div>
-            <div>1</div>
-        </div>
-        <div class="article-write">
-            <div>ステータス</div>
             <div>
-                <input type="text">
+                <input class="article-title" type="text" autocomplete="off">
+            </div>
+        </div>
+        <div class="article-write">
+            <div>その他</div>
+            <div>
+                <textarea class="etc"></textarea>
             </div>
         </div>
         <div class="send-area">
