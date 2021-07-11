@@ -1,0 +1,130 @@
+body {
+    font-family: "Sawarabi Mincho";
+}
+
+header {
+    /* background-color: #232323; */
+    background-color: #293b68;
+    margin-bottom: 28px;
+}
+
+footer {
+    margin-top: 20px;
+    background-color: #293b68;
+    color: white;
+    text-align: center;
+}
+
+footer span {
+    display: inline-block;
+    padding: 25px 0;
+}
+
+.topmenu {
+    color: white;
+    width: 70%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topmenu a{
+    display: inline-block;
+    padding: 20px 10px;
+    font-size: 18px;
+}
+
+.topmenu a:nth-child(1) {
+    font-size: 22px;
+    font-weight: 400;
+}
+
+
+section {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section .section-title {
+    text-align: center;
+    background-color: #293b68;
+    margin-bottom: 28px;
+}
+
+.section-title span {
+    font-size: 18px;
+    display: inline-block;
+    padding: 8px 0;
+    color: white;
+}
+
+.article-list {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+
+section table {
+    text-align: center;
+    width: 100%;
+    font-size: 14.5px;
+    border-collapse: separate;
+    border-spacing: 14px;
+}
+
+.tr-top {
+    font-weight: bold;
+    color: #293b68;
+}
+.no {
+    width: 5%;
+}
+
+.title {
+    width: 45%;
+}
+
+.name {
+    width: 20%;
+}
+
+.date {
+    width: 15%;
+}
+
+.status {
+    width: 15%;
+}
+
+.paging-area span {
+    display: inline-block;
+    padding: 8px 0;
+    font-size: 16px;
+}
+
+.search-area {
+    display: flex;
+    justify-content: center;
+}
+
+.search-area input {
+    box-sizing: border-box;
+    width: 220px;
+    padding: 4px 8px;
+    border: none;
+    border-left: 4px solid #293b68;
+}
+
+.search-area input:focus {
+    outline: none;
+}
+
+.search-area button {
+    height: 28px;
+    border: none;
+    background-color: #293b68;
+    color: white;
+    width: 45px;
+    font-size: 16px;
+}
