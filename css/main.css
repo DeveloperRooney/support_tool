@@ -1,15 +1,20 @@
 body {
     font-family: "Sawarabi Mincho";
+    min-width: 980px;
+}
+
+button {
+    font-family: "Sawarabi Mincho";
 }
 
 header {
     /* background-color: #232323; */
     background-color: #293b68;
-    margin-bottom: 28px;
+    margin-bottom: 100px;
 }
 
 footer {
-    margin-top: 20px;
+    margin-top: 100px;
     background-color: #293b68;
     color: white;
     text-align: center;
@@ -17,7 +22,7 @@ footer {
 
 footer span {
     display: inline-block;
-    padding: 25px 0;
+    padding: 45px 0;
 }
 
 .topmenu {
@@ -42,14 +47,14 @@ footer span {
 
 
 section {
-    width: 80%;
+    width: 70%;
     margin: 0 auto;
 }
 
-section .section-title {
+.section-title {
     text-align: center;
     background-color: #293b68;
-    margin-bottom: 28px;
+    margin-bottom: 24px;
 }
 
 .section-title span {
@@ -99,32 +104,51 @@ section table {
 
 .paging-area span {
     display: inline-block;
-    padding: 8px 0;
+    padding: 20px 0;
     font-size: 16px;
 }
 
-.search-area {
-    display: flex;
-    justify-content: center;
+
+
+.search-center select {
+    font-family: inherit;
+    padding: 3.5px;
 }
 
-.search-area input {
-    box-sizing: border-box;
-    width: 220px;
-    padding: 4px 8px;
+.search-input {
     border: none;
-    border-left: 4px solid #293b68;
+    border-left: 3.5px solid #232e49;
+    padding : 5px 5px;
+    width: 230px;
 }
 
-.search-area input:focus {
+
+.search-input:focus {
     outline: none;
 }
 
-.search-area button {
-    height: 28px;
+.search-btn {
+    display: inline-block;
+    background-color: #232e49;
     border: none;
-    background-color: #293b68;
+    padding: 5px 10px;
     color: white;
-    width: 45px;
-    font-size: 16px;
+}
+
+.search-btn:hover {
+    cursor: pointer;
+}
+.search-right {
+    text-align: right;
+    margin-bottom: 14px;
+}
+.search-right button {
+    background-color: #232e49;
+    border: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+.search-right button:hover {
+    cursor: pointer;
 }

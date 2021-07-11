@@ -17,13 +17,16 @@
 <body>
     <header>
         <div class="topmenu">
-            <a href="#">管理画面メイン</a>
-            <a href="#">LOGIN</a>
+            <a href="index.html">管理画面メイン</a>
+            <a href="login.html">ログイン</a>
         </div>
     </header>
     <section>
         <div class="section-title">
             <span>新着情報</span>
+        </div>
+        <div class="search-right">
+            <button onClick="location.href='article_write.html'">案件作成</button>
         </div>
         <table>
             <tr class="tr-top">
@@ -134,18 +137,24 @@
             <tr class="paging-area">
                 <td colspan="5">
                     <span>
-                        1 2 3 4 5 6 7 8 9 10
+                        1 2 3 4 5 6 7 8 9
                     </span>
                 </td>
             </tr>
             <tr>
                 <td colspan="5">
                     <div class="search-area">
-                        <div>
-                            <input type="text"><button type="submit"><i class="fas fa-search"></i></button>
+                        <div class="search-left">
+    
                         </div>
-                        <div class="write-btn">
-                            <button>作成</button>
+                        <div class="search-center">
+                            <select>
+                                <option>作成者</option>
+                                <option>タイトル</option>
+                                <option>内容</option>
+                            </select>
+                            <input type="text" class="search-input">
+                            <button type="button" class="search-btn">検索</button>
                         </div>
                     </div>
                 </td>
@@ -154,7 +163,7 @@
     </section>
     <footer>
         <span>
-            copyright Biz4m Corp. All rights reseved.
+            copyright Biz4m Corp. All rights reserved.
         </span>
     </footer>
 </body>

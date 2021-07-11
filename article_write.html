@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <title>SUPPORT TOOL :: Main</title>
+</head>
+
+<style>
+
+    .article-write {
+        display: flex;
+        margin : 0 auto;
+    }
+
+    .article-write div:nth-child(1) {
+        margin-top: 10px;
+        padding : 15px 10px;
+        width: 30%;
+        background-color: #232e49;
+        color : white;
+    }
+    .article-write div:nth-child(2) {
+        margin-top: 10px;
+        padding : 15px 10px;
+        width: 70%;
+    }
+
+    .article-write input {
+        min-width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        min-height: 250px;
+        max-height: 250px;
+    }
+
+    .send-area {
+        width: 400px;
+        margin: 0 auto;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .send-area button{
+        background-color: #232e49;
+        border: none;
+        width: 100px;
+        height: 50px;
+        color : white;
+        font-size: 14px;
+        font-weight: bold;
+        
+    }
+
+    .send-area button:hover {
+        cursor: pointer;
+    }
+
+    .send-area button:nth-child(1) {
+        background-color: white;
+        border: 2px solid red;
+        color: red;
+    }
+</style>
+<body>
+    <header>
+        <div class="topmenu">
+            <a href="index.html">管理画面メイン</a>
+            <a href="login.html">ログイン</a>
+        </div>
+    </header>
+    <section>
+        <div class="section-title">
+            <span>案件登録</span>
+        </div>
+        <div class="article-write">
+            <div>NO</div>
+            <div>1</div>
+        </div>
+        <div class="article-write">
+            <div>作成日時</div>
+            <div>1</div>
+        </div>
+        <div class="article-write">
+            <div>作成者</div>
+            <div>1</div>
+        </div>
+        <div class="article-write">
+            <div>タイトル</div>
+            <div>1</div>
+        </div>
+        <div class="article-write">
+            <div>ステータス</div>
+            <div>1</div>
+        </div>
+        <div class="article-write">
+            <div>ステータス</div>
+            <div>
+                <input type="text">
+            </div>
+        </div>
+        <div class="send-area">
+            <button type="button">キャンセル</button>
+            <button type="button">登録</button>
+        </div>
+    </section>
+    <footer>
+        <span>
+            copyright Biz4m Corp. All rights reserved.
+        </span>
+    </footer>
+</body>
+</html>
