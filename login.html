@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- CSS -->
-    <link rel="stylesheet" href="../css/reset.css">
-    <link rel="stylesheet" href="../css/main.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Sawarabi+Mincho" rel="stylesheet">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
@@ -46,6 +46,10 @@
         color: white;
         font-size: 18px;
     }
+
+    .login-btn:hover {
+        cursor: pointer;
+    }
 </style>
 
 <body>
@@ -74,11 +78,11 @@
 
     function login() {
         if(login_frm.userid.value=='') {
-            alert('아이디를 입력해 주세요.');
+            alert('IDを入力してください。');
             login_frm.userid.focus();
             return;
         }else if(login_frm.userpass.value=='') {
-            alert('비밀번호를 입력해 주세요.');
+            alert('パスワードを入力してください。');
             login_frm.userpass.focus();
             return;
         }
