@@ -8,15 +8,17 @@ button {
 }
 
 header {
+    /* background-color: #232323; */
     background-color: #293b68;
+    margin-bottom: 100px;
 }
 
 footer {
 
+    margin-top: 100px;
     background-color: #293b68;
     color: white;
     text-align: center;
-
 }
 
 footer span {
@@ -151,10 +153,4 @@ section table {
 
 .search-right button:hover {
     cursor: pointer;
-}
-
-.site-wrap {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }

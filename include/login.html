@@ -17,19 +17,12 @@
 
 <style>
 
-    main {
-        flex-grow: 1;
-    }
-
     .login-area {
+        margin-top: 200px;
+        margin-bottom: 450px;
         width: 350px;
         text-align: center;
-        display: flex;
-        flex-direction: column;
-        min-height: 70vh;
-        justify-content: center;
     }
-
     .login-area h1{
         font-weight: bold;
         font-size: 26px;
@@ -60,40 +53,36 @@
 </style>
 
 <body>
-    <div class="site-wrap">
-        <header>
-            <div class="topmenu">
-                <a href="index.html">管理画面メイン</a>
-                <a href="login.html">ログイン</a>
-            </div>
-        </header>
-        <main>
-            <section class="login-area">
-                <h1>ログイン</h1>
-                <form name="login_frm" action="logindo.html" method="post"  onsubmit="return false">
-                    <input type="text" name="userid" autocomplete="off" placeholder="ID">
-                    <input type="password" name="userpass" autocomplete="off" placeholder="PASSWORD">
-                    <button type="submit" class="login-btn" onclick="login()">ログイン</button>
-                </form>
-            </section>
-        </main>
-        <footer>
-            <span>
-                copyright Biz4m Corp. All rights reserved.
-            </span>
-        </footer>
-    </div>
+    <header>
+        <div class="topmenu">
+            <a href="index.html">管理画面メイン</a>
+            <a href="login.html">ログイン</a>
+        </div>
+    </header>
+    <section class="login-area">
+        <h1>ログイン</h1>
+        <form name="login_frm" action="logindo.html" method="post"  onsubmit="return false">
+            <input type="text" name="userid" autocomplete="off" placeholder="ID">
+            <input type="password" name="userpass" autocomplete="off" placeholder="PASSWORD">
+            <button type="submit" class="login-btn" onclick="login()">ログイン</button>
+        </form>
+    </section>
+    <footer>
+        <span>
+            copyright Biz4m Corp. All rights reserved.
+        </span>
+    </footer>
 </body>
 
 <script>
 
     function login() {
         if(login_frm.userid.value=='') {
-            alert('IDを入力してください。');
+            alert('아이디를 입력해 주세요.');
             login_frm.userid.focus();
             return;
         }else if(login_frm.userpass.value=='') {
-            alert('パスワードを入力してください。');
+            alert('비밀번호를 입력해 주세요.');
             login_frm.userpass.focus();
             return;
         }

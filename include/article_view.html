@@ -17,18 +17,6 @@
 
 <style>
 
-    section {
-        flex-grow: 1;
-        min-height: 70vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-    }
-
-    p {
-        line-height: 22px;
-    }
-
     .article-write {
         display: flex;
         margin : 0 auto;
@@ -95,73 +83,66 @@
 
 </style>
 <body>
+    <header>
+        <div class="topmenu">
+            <a href="index.html">管理画面メイン</a>
+            <a href="login.html">ログイン</a>
+        </div>
+    </header>
 
-    <div class="site-wrap">
+    <form name="write_frm" action="" method="post" onsubmit="return false">
 
-        <header>
-            <div class="topmenu">
-                <a href="index.html">管理画面メイン</a>
-                <a href="login.html">ログイン</a>
-            </div>
-        </header>
-        
-        
         <section>
-            <form name="write_frm" action="" method="post" onsubmit="return false">
-                <div class="section-title">
-                    <span>案件</span>
+            <div class="section-title">
+                <span>案件</span>
+            </div>
+            <div class="article-write">
+                <div>NO</div>
+                <div>1</div>
+            </div>
+            <div class="article-write">
+                <div>作成日時</div>
+                <div>1</div>
+            </div>
+            <div class="article-write">
+                <div>作成者</div>
+                <div>1</div>
+            </div>
+            <div class="article-write">
+                <div>タイトル</div>
+                <div>
+                    제목 영역입니다.
                 </div>
-                <div class="article-write">
-                    <div>NO</div>
-                    <div>1</div>
+            </div>
+            <div class="article-write contents">
+                <div>その他</div>
+                <div>
+                    <p>
+                             
+                    </p>
                 </div>
-                <div class="article-write">
-                    <div>作成日時</div>
-                    <div>1</div>
-                </div>
-                <div class="article-write">
-                    <div>作成者</div>
-                    <div>1</div>
-                </div>
-                <div class="article-write">
-                    <div>タイトル</div>
-                    <div>
-                        ECサイトのエラーの件
-                    </div>
-                </div>
-                <div class="article-write contents">
-                    <div>その他</div>
-                    <div>
-                        <p>
-                            内容を入力してください。
-                            
-                            
-                            
-                        </p>
-                    </div>
-                </div>
-                <div class="send-area">
-                    <button type="button">削除</button>
-                    <button type="submit" onclick="send()">修正</button>
-                </div>
-            </form>
+            </div>
+            <div class="send-area">
+                <button type="button">삭제</button>
+                <button type="submit" onclick="send()">수정</button>
+            </div>
         </section>
-        <footer>
-            <span>
-                copyright Biz4m Corp. All rights reserved.
-            </span>
-        </footer>
-    </div>
-    </body>
-    
-    <script>
+    </form>
+    <footer>
+        <span>
+            copyright Biz4m Corp. All rights reserved.
+        </span>
+    </footer>
+</body>
+
+<script>
     function send() {
         if(write_frm.title.value == "") {
-            alert("IDを入力してください。");
+            alert("제목을 입력해 주세요.");
             write_frm.title.focus();
             return;
         }else if(write_frm.etc.value == "") {
-            alert("パスワードを入力してください。");
+            alert("내용을 입력해 주세요.");
             write_frm.etc.focus();
             return;
         }

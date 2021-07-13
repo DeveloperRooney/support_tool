@@ -17,6 +17,14 @@
 
 <style>
 
+    section {
+        flex-grow: 1;
+        min-height: 70vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
     .article-write {
         display: flex;
         margin : 0 auto;
@@ -78,60 +86,62 @@
     }
 </style>
 <body>
-    <header>
-        <div class="topmenu">
-            <a href="index.html">管理画面メイン</a>
-            <a href="login.html">ログイン</a>
-        </div>
-    </header>
-
-    <form name="write_frm" action="" method="post" onsubmit="return false">
-
+    <div class="site-wrap">
+        <header>
+            <div class="topmenu">
+                <a href="index.html">管理画面メイン</a>
+                <a href="login.html">ログイン</a>
+            </div>
+        </header>
+        
+        
         <section>
-            <div class="section-title">
-                <span>案件登録</span>
-            </div>
-            <div class="article-write">
-                <div>NO</div>
-                <div>1</div>
-            </div>
-            <div class="article-write">
-                <div>作成日時</div>
-                <div>1</div>
-            </div>
-            <div class="article-write">
-                <div>作成者</div>
-                <div>1</div>
-            </div>
-            <div class="article-write">
-                <div>タイトル</div>
-                <div>
-                    <input name="title" class="article-title" type="text" autocomplete="off">
-                </div>
-            </div>
-            <div class="article-write">
-                <div>その他</div>
-                <div>
-                    <textarea name="etc" class="etc"></textarea>
-                </div>
-            </div>
-            <div class="send-area">
-                <button type="button" onclick="cancle()">キャンセル</button>
-                <button type="submit" onclick="send()">登録</button>
-            </div>
-        </section>
-    </form>
-    <footer>
-        <span>
-            copyright Biz4m Corp. All rights reserved.
-        </span>
-    </footer>
-</body>
-
-<script>
+                <form name="write_frm" action="" method="post" onsubmit="return false">
+                    <div class="section-title">
+                        <span>案件登録</span>
+                    </div>
+                    <div class="article-write">
+                        <div>NO</div>
+                        <div>1</div>
+                    </div>
+                    <div class="article-write">
+                        <div>作成日時</div>
+                        <div>1</div>
+                    </div>
+                    <div class="article-write">
+                        <div>作成者</div>
+                        <div>1</div>
+                    </div>
+                    <div class="article-write">
+                        <div>タイトル</div>
+                        <div>
+                            <input name="title" class="article-title" type="text" autocomplete="off">
+                        </div>
+                    </div>
+                    <div class="article-write">
+                        <div>その他</div>
+                        <div>
+                            <textarea name="etc" class="etc"></textarea>
+                        </div>
+                    </div>
+                    <div class="send-area">
+                        <button type="button" onclick="cancle()">キャンセル</button>
+                        <button type="submit" onclick="send()">登録</button>
+                    </div>
+                </form>
+            </section>
+        <footer>
+            <span>
+                copyright Biz4m Corp. All rights reserved.
+            </span>
+        </footer>
+    </div>
+    </body>
+    
+    <script>
 
     function cancle() {
-        var con = confirm('前のページに戻りますか？\n書いた内容は消されます。')
+        var con = confirm('前のページに戻りますか？\n作成した内容は消されます。')
     }
     function send() {
         if(write_frm.title.value == "") {
